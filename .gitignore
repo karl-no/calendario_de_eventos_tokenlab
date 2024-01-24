@@ -1,2 +1,3 @@
 Desafio Técnico TokenLab
 **/node_modules*
+.env
