@@ -1,4 +1,4 @@
-import 'dotenv/config';
+// import 'dotenv/config';
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('USER_CALENDAR', 'root', '123456', {
@@ -17,7 +17,7 @@ const config = {
     timezone: 'Z',
   },
   logging: false,
-}
+};
 
 module.exports = {
   sequelize,
