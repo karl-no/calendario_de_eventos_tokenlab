@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 // Sincroniza os modelos com o banco de dados
 sequelize.sync({ force: false }).then(() => {
   console.log('Conexão com o banco de dados estabelecida.');
+}).catch(err = => {
+  console.error('Erro ao conectar ao banco de dados:', err);
 });
 
 // Adiciona middleware para processar JSON

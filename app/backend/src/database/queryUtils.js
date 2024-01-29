@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 import fs from 'fs';
 import path from 'path';
+// eslint-disable-next-line import/no-cycle
 import connection from './connection';
 
 export function readQueries(filePath = 'createDatabase.sql') {
